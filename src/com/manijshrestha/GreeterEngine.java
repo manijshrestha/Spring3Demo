@@ -17,8 +17,7 @@ public class GreeterEngine {
 		ApplicationContext ctx = new GenericXmlApplicationContext(
 				"com/manijshrestha/config/app-config.xml");
 
-		GreeterService greeterService = ctx
-				.getBean(GreeterService.class);
+		GreeterService greeterService = ctx.getBean(GreeterService.class);
 
 		System.out.println(greeterService.greet("World"));
 	}
